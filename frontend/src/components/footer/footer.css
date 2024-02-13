@@ -1,0 +1,96 @@
+.doLiYl {
+    width: 80%;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+}
+.wmToe {
+    bottom: 0px;
+    margin: 0px auto;
+    background-color: rgb(37, 36, 58);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    width: 100%;
+    padding: 40px 40px 20px;
+}
+.gOUyyK {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.hbPDwc {
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(170, 170, 170);
+}
+@media (min-width: 360px) and (max-width: 790px)
+{
+    .bgpxid {
+    font-size: 2.3vw;
+}
+}
+.bgpxid {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+}
+@media (min-width: 360px) and (max-width: 790px)
+{
+.eIThsP {
+    font-size: 12px;
+}
+}
+.eIThsP {
+    margin-bottom: 20px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(170, 170, 170);
+}
+.ffAbnY {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.jCndOj {
+    display: flex;
+    justify-content: flex-start;
+    width: 12px;
+    height: 12px;
+    margin-top: 5px;
+    object-fit: contain;
+}
+@media (min-width: 360px) and (max-width: 790px)
+{
+.kiFKke {
+    font-size: 2.3vw;
+}
+}
+.kiFKke {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: rgb(255, 255, 255);
+    line-height: 25px;
+}

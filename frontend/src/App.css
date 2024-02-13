@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+
+
+/* Utilisation de Media Queries pour ajuster les styles en fonction de la largeur de l'écran */
+@media (max-width: 768px) {
+  /* Si la largeur de l'écran est de 768 pixels ou moins */
+  .header {
+    /* Vous pouvez apporter des modifications aux styles ici pour un affichage plus compact */
+    padding: 50px;
+  }
+
+  .container {
+    /* Réduisez la marge ou la largeur max pour mieux s'adapter à un écran plus étroit */
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/*....ADMIN.........................................................*/
+.main__layout {
+  margin-left: 260px;
+}

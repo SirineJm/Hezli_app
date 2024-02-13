@@ -1,0 +1,315 @@
+/* CSS pour le composant UserProfile */
+/* body {
+  background-color: rgb(74,65,
+87
+  ); /* Couleur de fond bleu pour toute la page */
+/* } */ 
+.user-profile {
+  display: flex;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #794a83;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10vh;
+}
+
+.profil img {
+  max-height: 20vh;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+  object-position: center top;
+  max-width: 10vw;
+}
+
+.formul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30vh;
+  margin-left: -15vw;
+}
+.formul h3 {
+  text-align: start;
+}
+.formul2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3vh;
+  margin-left: -15vw;
+}
+.upd h4 {
+  display: flex;
+  text-align: start;
+  margin-left: -15vw;
+  margin-top: 5vh;
+}
+
+.form-group1 {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 20px;
+}
+.form-group2 {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 20px;
+}
+
+.formul label {
+  display: flex;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: start;
+  color: rgb(243, 237, 237);
+  margin-top: 2vh;
+}
+
+.formul input {
+  width: 18vw;
+  max-width: 20vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.formul2 input {
+  display: flex;
+  max-width: 38vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+.user-profile button {
+  background-color: rgb(255, 212, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 20vw;
+}
+
+.update button {
+  background-color: rgb(255, 212, 0);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 50%;
+}
+.user-profile button:hover {
+  background-color: rgb(64, 53, 82);
+}
+
+.user-profile p {
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+/* Styling pour les messages d'erreur ou de succès */
+.error-message,
+.success-message {
+  text-align: center;
+  margin-top: 10px;
+  color: red; /* pour les messages d'erreur */
+}
+
+.success-message {
+  color: green; /* pour les messages de succès */
+}
+/*...pagination..........................................................................*/
+.pagination {
+  display: flex;
+  flex-direction: column; /* Mettez les boutons de pagination en colonne */
+  align-items: flex-start; /* Alignez-les à gauche */
+  margin-top: 20px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row; /* Affiche les deux parties côte à côte */
+  min-height: 100vh;
+}
+
+.pagination-container {
+  width: 20%; /* Largeur de la partie de pagination */
+  padding: 20px; /* Ajoute de l'espace autour de la pagination */
+  background-color: rgb(
+    60,
+    52,
+    82
+  ); /* Couleur de fond de la partie de pagination */
+}
+.pagin {
+  margin-top: 15vh;
+}
+
+.content-container {
+  flex-grow: 1; /* Permet à la partie de contenu de prendre autant d'espace disponible que possible */
+  padding: 20px; /* Ajoute de l'espace autour du contenu */
+}
+/*........mettre..à..jour..........................................................................................*/
+.prof a {
+  border-radius: 10px;
+  color: rgb(243, 237, 237);
+  display: flex;
+  margin-top: 4vh;
+  margin-left: 1vw;
+  width: 10vw;
+  padding: 4px 8px;
+  font-size: large;
+  cursor: pointer;
+}
+/* Appliquez une classe active aux liens actifs */
+.prof a.active {
+  background-color: rgb(255, 212, 0);
+}
+
+/* Style lorsque survolé */
+.prof a:hover {
+  background-color: rgb(255, 212, 0);
+}
+.mise p {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 8vw;
+  color: rgb(15, 156, 45);
+  font-size: 14px;
+}
+.mise1 p {
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 6vw;
+  color: rgb(15, 156, 45);
+  font-size: 13.5px;
+}
+.error p{
+  display: flex;
+  margin-top: 1vh;
+  margin-left: 8vw;
+  color: rgb(95, 10, 10);
+  font-size: 12px;
+}
+/*....compte..............................................................*/
+.profil1 img {
+  display: flex;
+  max-height: 20vh;
+  border-radius: 50%;
+  border: none;
+  object-fit: cover;
+  object-position: center top;
+  max-width: 10vw;
+  margin-top: 12vh;
+  margin-left: 4vw;
+}
+.formul3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+  margin-left: 10vw;
+  gap: 20px;
+}
+.formul3 h3 {
+  text-align: start;
+}
+.formul3 input {
+  display: flex;
+  max-width: 38vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  background-color: rgb(74, 65, 87);
+}
+.formul3 label {
+  display: flex;
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 10px;
+  text-align: start;
+  color: rgb(243, 237, 237);
+  margin-top: 2vh;
+}
+.form-group4 {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 20%;
+}
+/*...Historique...........................................................................*/
+.hist {
+  display: flex;
+  margin-top: 10vh;
+}
+/* Style du tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+/* Style du bouton "Nouvelle Réservation" */
+#nouvelleReservation {
+  padding: 10px 20px;
+  background-color: rgb(255, 212, 0);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#nouvelleReservation:hover {
+  background-color: rgb(94, 81, 18);
+}
+/* Styles pour le bouton Modifier */
+.edit-button {
+  background-color: #007bff; /* Couleur de fond bleue */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Pas de bordure */
+  padding: 8px 16px; /* Espacement interne du bouton */
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de type main au survol */
+  transition: background-color 0.3s; /* Transition en douceur de la couleur de fond */
+}
+
+.edit-button:hover {
+  background-color: #0056b3; /* Couleur de fond bleue plus foncée au survol */
+}
+/* Styles pour le bouton Supprimer */
+.delete-button {
+  background-color: #ff0000; /* Couleur de fond rouge */
+  color: #fff; /* Couleur du texte blanc */
+  border: none; /* Pas de bordure */
+  padding: 8px 8px; /* Espacement interne du bouton */
+  margin-bottom: 2px;
+  border-radius: 4px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de type main au survol */
+  transition: background-color 0.3s; /* Transition en douceur de la couleur de fond */
+}
+
+.delete-button:hover {
+  background-color: #cc0000; /* Couleur de fond rouge plus foncée au survol */
+}

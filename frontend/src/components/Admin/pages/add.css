@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Style pour le formulaire */
+form {
+  width: 50%;
+}
+
+/* Style pour les étiquettes des champs */
+.form-label  {
+  font-weight: bold;
+  color: #051b33;
+  margin-top: 30px;
+ 
+}
+
+/* Style pour les champs de saisie */
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style pour le bouton */
+.btn-primary {
+  background-color: #0b243f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 455px;
+}
+.btn-primary1 {
+  background-color: #0b243f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+.btn-primary:hover {
+  background-color: #051b33;
+}
+
+/* Style pour le titre */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  color: rgb(24, 3, 92);
+  font-weight: bold;
+}
+
+/* Style pour les messages d'erreur (si nécessaire) */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style pour les messages de succès (si nécessaire) */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.d-flex{
+margin-top: 90px;
+background-color: rgb(240, 244, 245);
+width: 40vw;
+height: 60vh;
+border-radius: 50px;
+border-radius: 1.2em;
+border-right: 0.7em solid rgb(255, 212, 0);
+border-bottom:  0.7em solid rgb(255, 212, 0);
+
+}
+.col-12{
+  width:450px;
+  margin-left:-50px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,78 @@
+header {
+  height: 10vh;
+  /* line-height: 10vh; */
+  align-items: center;
+  background-color: rgb(64, 53, 82);
+  color: #fff;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
+.logo img {
+  height: 25px;
+  width: 120px;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+header a {
+  color: #fff;
+  margin-left: 45px;
+  font-size: 11px;
+}
+
+header a.active {
+  color: rgb(255, 212, 0);
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexSB li {
+  margin: 0 1px;
+  padding: 0px;
+  margin-left: 30px;
+}
+.inscrire-btn {
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0px 1px 0px 0px;
+  padding: 12px 19px;
+  color: white;
+  border-color: white;
+  background-color: transparent;
+}
+.inscrire-btn:hover {
+  border-color: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0);
+}
+
+.flexSB select {
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.flexSB select option {
+  background-color: rgb(40, 61, 61);
+}
+.conn {
+  display: flex;
+  margin-left: 1vw;
+}
+
+/* Dans votre fichier CSS */
+.button-link.active-button .inscrire-btn {
+  border-color: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0); /* ou la couleur de votre choix */
+  /* Autres styles que vous souhaitez appliquer lorsqu'il est actif */
+}
+.img-profil {
+  height: 7vh;
+  width: 4vw;
+  margin-left: 10vw;
+}

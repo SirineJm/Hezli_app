@@ -1,0 +1,398 @@
+.loginPage {
+ 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  width: 1400px;
+  height: 240px;
+ 
+}
+.loginForm  {
+  background-color: rgba(1, 32, 93, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.loginForm1  {
+
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-top: 550px ;
+margin-left: -1200px ;
+padding: 5px;
+
+}
+.loginForm2  {
+
+color: rgb(3, 3, 56);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-bottom: 550px ;
+margin-left: 0px ;
+padding: 5px;
+
+}
+.custom-color {
+background-color: rgba(1, 32, 93, 0.6);
+
+}
+.client_image {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+.container-fluid {
+  height: 100vh;
+  background-color: rgba(169, 175, 202, 0.6);
+  
+}
+
+.col-auto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 120%;
+  width: 300px;
+  height: 750px;
+  margin-right: 10px;
+ 
+
+ 
+}
+.bg-dark {
+  background-color: #343a40;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+.nav-link {
+  padding: 10px;
+  color: #fff;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.d-flex {
+  display:flex;
+  
+}
+.d-flex1{
+  border:#fff ;
+  background-color: #fff;
+  border-bottom: #fff;
+  display:inline-flex ;
+  margin-left: 60px;
+}
+
+.flex-column {
+  flex-direction: column;
+ 
+}
+
+.align-items-center {
+  align-items: center;
+  margin-left: -9%;
+
+}
+
+.align-items-sm-start {
+  align-items: flex-start;
+  margin-left: 5px;
+}
+
+.align-middle {
+  align-self: center;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 1rem;
+}
+
+.mb-md-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-md-3 {
+  margin-top: 0.75rem;
+}
+
+.me-md-auto {
+  margin-right: auto;
+}
+
+.p-2 {
+  padding: 0.5rem;
+  position: center;
+  width: 1000px;
+  background-color: #598bc5;
+}
+
+.justify-content-center {
+  justify-content: center;
+  margin-left: 0%;
+}
+.justify-content-between{
+  justify-content: center;
+  margin-top: 30px;
+ 
+}
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.empImg {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 30px auto;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+h1{
+position: center;
+  color: #051745;
+  margin-left: 50px;
+}
+
+.px-5 {
+padding-left: 1.25rem;
+padding-right: 1.25rem;
+width: 1200px;
+}
+
+.px-6{
+padding-left: 1.25rem;
+padding-right: 1.25rem;
+width: 1600px;
+}
+.py-3 {
+padding-top: 0.75rem;
+padding-bottom: 0.75rem;
+}
+
+.client{
+margin:-200px 50px 4px 250px;
+}
+
+
+.h3 {
+font-size: 1.75rem;
+font-weight: bold;
+margin-bottom: 0;
+}
+
+/* Couleur pour les lignes paires */
+table tr:nth-child(even) {
+background-color: #fbfcfc;
+}
+
+/* Couleur pour les lignes impaires */
+table tr:nth-child(odd) {
+background-color:#fbfcfc;
+
+}
+
+.table {
+margin-bottom: 1rem;
+border-color: #0e1012;
+
+}
+
+.table th,
+.table td {
+padding: 0.75rem;
+vertical-align: top;
+border-top: 1px solid #115ca7;
+border-color: #0e1012;
+
+}
+
+
+.table thead th {
+vertical-align: bottom;
+border-bottom: 2px solid #0e1012;
+width: 1px;
+background-color: #06023f;
+color: white;
+}
+
+.table tbody + tbody {
+border-top: 2px solid #5079a2;
+
+
+}
+.table tbody td{
+border-bottom: 1px solid #0e1012;
+
+}
+.btn {
+
+display: inline-block;
+font-weight: 400;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: 0.25rem;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+cursor: pointer;
+margin-right: 0.7rem;
+}
+
+.btn-primary {
+color: #fff;
+background-color: #007bff;
+border-color: #007bff;
+}
+
+.btn-primary:hover {
+color: #fff;
+background-color: #0069d9;
+border-color: #0062cc;
+}
+
+.btn-danger {
+color: #fff;
+background-color: #dc3545;
+border-color: #dc3545;
+}
+
+.btn-danger:hover {
+color: #fff;
+background-color: #c82333;
+border-color: #bd2130;
+position: center;
+}
+
+.btn-secondary {
+color: #fff;
+background-color: #6c757d;
+border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+color: #fff;
+background-color: #5a6268;
+border-color: #545b62;
+}
+
+.p{
+color: hsl(0, 0%, 100%);
+}
+
+.btn-success{
+margin-top: -50px;
+position:left;
+}
+
+.circle-stat {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+background-color: #f0f0f0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+.circle-stat h4 {
+margin-bottom: 8px;
+}
+
+.circle-stat h5 {
+font-weight: bold;
+}
+
+.custom-select {
+/* Vos styles personnalisés ici */
+/* Par exemple : */
+width: 200px;
+border: 1px solid #ccc;
+border-radius: 4px;
+padding: 8px;
+
+background-color: #f0f3f5;
+}
+.w-100{
+margin-top: 5px;
+}
+.mt-3{
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+
+/* Style de base pour la classe "btn" */
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Style spécifique pour la classe "btn-success" */
+.btn1.btn-success {
+  background-color:#161743;  /* Couleur de fond verte pour les boutons de succès */
+  border: 1px solid #161743; /* Bordure verte */
+}
+
+/* Style au survol du bouton */
+.btn1.btn-success:hover {
+  background-color:#161743;  /* Couleur de fond verte légèrement plus foncée au survol */
+  border: 1px solid #161743; /* Bordure verte légèrement plus foncée au survol */
+}
+
+.px-51 {
+  
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 1000px;
+    margin-top: 50px;
+   
+}

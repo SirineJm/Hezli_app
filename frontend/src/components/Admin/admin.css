@@ -1,0 +1,123 @@
+.log-s{
+    display: flex;
+    margin-left: 0px;
+    margin:0 auto;
+    background-color: white;
+    font-family: sans-serif;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5);
+    margin-top: 25px;    
+  }
+.log-s .left {
+    float:left;
+    width: 400px;
+    height:540px;
+    margin-left:0px;
+    margin-top: 0px;
+    background-color: white;
+    
+  }
+.log-s .left img{
+    width: 700px;
+    height: 600px;
+    margin-top: 5px;
+    margin-left: 5vw;
+  }
+.log-s .right{
+    margin-top: -49px;
+    margin-left: 10px; 
+  }
+
+  .Form-box{
+    background-color: #f2fbf8;
+    padding:20px 40px;
+    box-sizing: border-box;
+    height: 580px;
+    margin-left: 360px;
+    margin-top: 90px;
+    
+  }
+  .Form-box img{
+    margin-left: 80px;
+    width: 150px;
+  }
+  
+  .Form-box h2{
+    margin-left: 50px;
+  }
+  
+  .Form-box p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;
+    color:#2b2478;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .Form-box input{
+   margin-bottom: 20px;
+    width: 350px;
+    height: 40px;
+  } 
+  .Form-box input[type="email"],
+  .Form-box input[type="password"]{
+    border:none ;
+    border-bottom:2px solid #89b2df
+  }
+  .Form-box input[type="email"]:focus,
+  .Form-box input[type="password"]:focus{
+    border-bottom:2px solid #89b2df
+  }
+  .Form-box button{
+  color:#2b2478;;
+  border:none;
+  outline:none;
+  height:40px;
+  width:350px;
+  background-color:rgb(255, 212, 0);
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  }
+
+  
+.mo-passe {
+    color:#0056b3;
+    margin-top: 25px;
+    width: 320px;
+  }
+  
+  .text-danger5{
+    font-size: 14px;
+    color: red;
+  }
+  
+  .page-chauff{
+    margin-left: 345px;
+    
+  }
+  
+  .dkHSaO {
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(37, 36, 58);
+    color: rgb(255, 255, 255);
+  }
+  
+  .form-pag-container{
+    flex-direction: column;
+  }
+  .form-pag {
+  
+  }
+  
+  .form-pag-container table tr{
+  
+    background-color: transparent;
+    margin-left: -50px;
+    width:70px;
+    height: 10px;
+  }
+  .cal-icon{
+    height:50px;
+  }

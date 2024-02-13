@@ -1,0 +1,1374 @@
+.pl {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(C:\Users\AZUZ\Desktop\projet_stage2GT\Stage_react\hezli\frontend\public\Img\i1.jpeg);
+  background-repeat: no-repeat;
+  background-position: initial;
+  background-size: cover;
+}
+
+.stepper-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 330px;
+  width: 40vw;
+  margin-top: 15vh;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stepper-item::before,
+.stepper-item::after {
+  position: absolute;
+  content: '';
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item::before {
+  border-bottom: 10px solid #ccc;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgb(255, 212, 0);
+  margin-bottom: 6px;
+  left: 50%;
+  margin-top: 5px;
+}
+
+.stepper-item.active {
+  font-weight: bold;
+}
+
+.stepper-item.completed .step-counter {
+  background-color: rgb(255, 212, 0);
+}
+
+.stepper-item.completed::after,
+.stepper-item:last-child.completed::after {
+  /* Ajoutez cette règle */
+  position: absolute;
+  content: '';
+  border-bottom: 10px solid rgb(255, 212, 0);
+  width: 100%;
+  top: 15px;
+  left: 50%;
+  z-index: 3;
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+
+.stepper-item:last-child::after {
+  content: none;
+}
+
+/* popup.css */
+.popup {
+  display: flexbox;
+  position: absolute;
+  cursor: auto;
+  min-width: 38%;
+  max-width: 38%;
+  max-height: 200%;
+  box-shadow: rgb(255, 212, 0) 10px 10px 0px 0px;
+  top: 29vh;
+  left: 26vw;
+  margin-top: 1vh;
+  transform: translate(10%, -9%);
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+/*-------------------*/
+.bu-ret {
+  position: absolute;
+  text-shadow: rgb(15, 15, 15) 1px 1px 0px;
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(255, 212, 0);
+  top: 4vh;
+  left: 2vh;
+  font-size: 22px;
+  font-family: 'Calibri';
+  cursor: pointer;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 6vh;
+  cursor: pointer;
+  color: rgb(255, 212, 0);
+  text-shadow: rgb(15, 15, 15) 1px 1px 0px;
+}
+
+h2 {
+  display: flex;
+  margin-top: 2.5vh;
+  margin-left: 6vh;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: rgb(255, 212, 0) 1px 1px 0px;
+}
+.obj h2 {
+  display: flex;
+  margin-top: 2vh;
+  margin-left: 8vh;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: rgb(255, 212, 0) 1px 1px 0px;
+}
+
+.image {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/1428px-Google_Maps_icon_%282020%29.svg.png')
+    no-repeat;
+  background-size: 15%;
+  padding: 10px 30px 10px 50px;
+  margin-left: 3vw;
+  margin-top: 9vh;
+  position: fixed;
+}
+
+.switch {
+  margin-left: 8vw;
+  position: absolute;
+  display: flex;
+  width: 4vw;
+  height: 3vh;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 3vh;
+  width: 1.5vw;
+  left: 0px;
+  box-shadow: #ccc -1px 0px 1px 1px;
+  bottom: 0.1vh;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #f5f506;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #f5f506;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(2.4vw);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.input-label {
+  display: flex;
+  max-height: 8vh;
+  max-width: 20vw;
+  position: relative;
+  display: inline-block;
+  margin-left: -5vw;
+}
+.input-label1 {
+  text-align: start;
+  justify-content: space-between;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 1vh;
+  min-width: 10vw;
+  margin-left: 5vw;
+}
+.input-bu {
+  text-align: center;
+  width: 390px;
+  margin: 0 auto;
+  padding: 7px;
+  border-radius: 1em;
+  color: rgb(26, 2, 2);
+  font-size: 16px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: -150px;
+}
+
+.input-bu p {
+  margin-left: 12vw;
+  margin-top: 1vh;
+  padding: 1vw;
+}
+.input-bu2 {
+  text-align: center;
+  width: 40vw;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 1em;
+  color: rgb(26, 2, 2);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: -23vh;
+}
+.input-bu2 p {
+  margin-left: 12vw;
+  margin-top: 1vh;
+  padding: 1vw;
+}
+.input-container1 {
+  height: 6vh;
+  width: 18vw;
+  margin-bottom: 3px;
+  background-color: rgb(247, 245, 245);
+  border-radius: 15px;
+  border: transparent;
+  margin-left: -50px;
+  margin-top: 1vh;
+}
+
+/*.......................................................................*/
+
+.input1 {
+  display: flexbox;
+  align-items: center;
+  max-width: 30vw;
+  gap: 15px;
+  padding: 0vh;
+  margin-left: 5vw;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vh;
+  font-weight: bold;
+  margin-left: -3vw;
+  width: 50vw;
+}
+
+.button-wrapper {
+  display: inline-flex; /* Afficher les boutons sur la même ligne */
+  margin-left: 2vw;
+  min-width: 12vw;
+  width: 26vw;
+  height: 4vh;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  align-items: center;
+}
+.button-primary {
+  height: 7vh;
+  width: 15vw;
+  color: rgb(4, 4, 4);
+  padding: 10px 20px;
+  margin-right: 0px; /* Espacement entre les boutons */
+  border-radius: 30px 0px 0 30px; /* Arrondi pour la partie supérieure */
+  border: none; /* Supprime la bordure */
+  cursor: pointer; /* Curseur au survol */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.button-secondary {
+  height: 7vh;
+  width: 15vw;
+  color: #090909;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: '#F5F5F5';
+  cursor: pointer;
+  font-size: 15px;
+}
+.button-secondary button:hover {
+  background-color: rgb(255, 212, 0);
+}
+.button-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.button-wrap {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+}
+.button-wrap1 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 5vw;
+  gap: 5px;
+}
+.button-minus,
+.button-plus {
+  background-color: rgb(255, 212, 0);
+  color: rgb(1, 1, 1);
+  border: none;
+  border-radius: 50%;
+  width: 3vw;
+  height: 6vh;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 1;
+}
+.button-count {
+  margin: 0 10px;
+  font-size: 15px;
+}
+.input-row {
+  gap: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-left: -3vw;
+}
+.so1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 212, 0);
+  color: rgb(253, 252, 252);
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-bottom: 5vh;
+  margin-left: -0.8vw;
+  border: none;
+  border-radius: 50%;
+  width: 0.1vw;
+  height: 3vh;
+}
+.so {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 212, 0);
+  color: rgb(1, 1, 1);
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-bottom: 5vh;
+  margin-left: -0.8vw;
+  border: none;
+  border-radius: 50%;
+  width: 0.1vw;
+  height: 3vh;
+}
+.so2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 212, 0);
+  color: rgb(1, 1, 1);
+  font-size: 17px;
+  padding: 5px 10px;
+  margin-bottom: 10vh;
+  margin-left: -0.8vw;
+  border: none;
+  border-radius: 50%;
+  width: 0.1vw;
+  height: 3vh;
+}
+.my-6 {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacement entre les éléments */
+  margin-top: 20px;
+  margin-left: -30px;
+}
+.my-6 p {
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  text-align: justify;
+  margin-left: 1vw;
+  margin-bottom: 3vh;
+}
+.my-5 {
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Espacement entre les éléments */
+  margin-top: 1vh;
+  margin-left: 2.5vw;
+}
+.my-5 p {
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  margin-left: 1vw;
+  margin-right: 2.5vw;
+  margin-bottom: 3vh;
+}
+.input-container-flex {
+  display: flex;
+  align-items: center;
+}
+.input-con1 {
+  color: transparent; /* Masque le texte de l'input */
+  text-shadow: 0 0 0 rgb(248, 247, 247);
+  width: 3vw;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 10px;
+  font-size: 15px;
+  gap: 0px;
+}
+.input-con1 select {
+  color: black; /* Masque le texte de l'input */
+  text-shadow: 0 0 0 rgb(248, 247, 247);
+  width: 8vw;
+  height: 2.5pc;
+  background-color: #e7e4e4;
+  border: transparent;
+  margin-top: 2px;
+  margin-left: 2vw;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.input-con2 {
+  display: inline-flex; /* Utilisez inline-flex pour aligner les éléments sur la même ligne */
+  align-items: center; /* Centrez verticalement les éléments */
+  color: transparent; /* Masque le texte de l'input */
+  text-shadow: 0 0 0 rgb(248, 247, 247);
+  width: 1vw;
+  height: 40px;
+  background-color: transparent;
+  border: transparent;
+
+  margin-left: -1vw;
+  gap: 0px;
+}
+.input-con2 label {
+  /* Supprimez les styles inutiles, car ils masquent le texte et ne sont pas nécessaires */
+  color: black;
+  width: 8vw;
+  height: 2.5pc;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 15px;
+}
+
+.input-con2 select {
+  color: black; /* Masque le texte de l'input */
+  width: 6.5vw;
+  height: 2.5pc;
+  background-color: rgb(247, 245, 245);
+  border: transparent;
+  margin-top: 2px;
+  margin-left: 2vw;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.butt button {
+  min-width: 12vw;
+  min-height: 6.2vh;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0);
+  box-shadow: #090909 2px 2px;
+  margin-left: 15vw;
+  cursor: pointer;
+}
+
+/* ---------estimation-----------*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-estim {
+  display: flex;
+  min-width: 90%;
+  min-height: 20%;
+}
+
+/* Popup Clair */
+.selected.popup1 {
+  /* Styles pour le popup clair */
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Popup Noir et Blanc */
+.popup2 {
+  /* Styles de base pour le popup 2 */
+  background-color: rgba(0, 0, 0, 0.9); /* Fond noir */
+  filter: grayscale(100%); /* Convertir en noir et blanc */
+}
+
+.popup1 {
+  display: flexbox;
+  position: absolute;
+  cursor: auto;
+  min-width: 28%;
+  max-width: 28%;
+  max-height: 88%;
+  box-shadow: rgb(255, 212, 0) 5px 5px 0px 0px;
+  top: 28vh;
+  left: 30vw;
+  transform: translate(10%, -9%);
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.popup2 {
+  display: flexbox;
+  position: absolute;
+  cursor: auto;
+  min-width: 28%;
+  max-width: 38%;
+  max-height: 100%;
+  box-shadow: rgb(255, 212, 0) 5px 5px 0px 1px;
+  top: 33vh;
+  right: 22vw;
+  transform: translate(10%, -9%);
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.box1 {
+  display: flex;
+  background-color: rgb(255, 212, 0);
+  min-width: 25vw;
+  height: 11vh;
+  margin-top: -1.9vh;
+  margin-left: -1vw;
+  margin-right: -1vw;
+  border-radius: 20px 20px 0% 0%;
+}
+
+.box1 h5 {
+  display: flex;
+  position: absolute;
+  margin-top: 4.8vh;
+  margin-left: 9vw;
+  color: #333053;
+  font-size: 0.9em;
+}
+.box1 h3 {
+  display: flex;
+  position: absolute;
+  margin-top: 4vh;
+  margin-left: 12vw;
+  color: #333053;
+  font-size: 1.4em;
+}
+.box1 .bu-ret {
+  color: #333053;
+  font-size: 160%;
+  font-family: Calibri;
+  margin-top: -1vh;
+}
+
+.interrogation::before {
+  content: '?';
+  position: absolute;
+  margin-top: 6vh;
+  margin-left: 23vw;
+  transform: translateY(-50%);
+  width: 3vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333053; /* Couleur du cercle */
+  border-radius: 50%;
+  font-size: 200%;
+  color: rgb(255, 212, 0); /* Couleur du point d'interrogation */
+}
+
+.img-cont {
+  display: flex;
+  margin-left: 15vw;
+  margin-top: 1vh;
+}
+.img-cont h3 {
+  margin-left: -15vw;
+  margin-top: 2vh;
+  padding: 0% 15%;
+}
+.liv {
+  display: flex;
+  width: 1.6vw;
+  height: 5vh;
+  margin-top: 1vh;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 0% 1% 0% 0%;
+}
+.option p {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-left: 1vw;
+}
+.option img {
+  margin-top: -5vh;
+}
+input {
+  padding: 1%;
+  width: 150%;
+  margin-bottom: 10px;
+  margin-left: 1vw;
+  background-color: none;
+  border: none;
+}
+.option button {
+  background-color: transparent;
+  padding: 1px 1px;
+  border: none;
+  cursor: pointer;
+  margin-left: 8vw;
+}
+button:hover {
+  transform: scale(1.1);
+}
+.butt-cont button {
+  min-width: 12vw;
+  min-height: 6.2vh;
+  border-radius: 10px;
+  margin-top: 6vh;
+  margin-left: 48vw;
+  font-size: 14px;
+  border: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0);
+  box-shadow: #090909 2px 2px;
+}
+
+.butt-cont1 button {
+  position: absolute;
+  min-width: 12vw;
+  min-height: 6.2vh;
+  border-radius: 10px;
+  margin-top: 80vh;
+  margin-left: -21vw;
+  font-size: 14px;
+  border: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0);
+  box-shadow: #090909 2px 2px;
+}
+.objet-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-con {
+  display: flex;
+  width: 34vw;
+  height: 6vh;
+  padding: 2%;
+  margin-left: 1vw;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #e4e6eb;
+  text-align: start;
+  align-items: center;
+}
+.input-con input {
+  width: 30vw;
+  height: 5vh;
+  margin-left: 1vw;
+  margin-top: 1.2vh;
+  background-color: transparent;
+}
+.input-con img {
+  margin-left: 1vw;
+  margin-top: -1vh;
+  width: 1.5vw; /* Ajustez la largeur selon vos besoins */
+  height: 2.5vh; /* Ajustez la hauteur selon vos besoins */
+}
+.custom-select-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.custom-select-wrapper input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+.custom-select-wrapper input:focus + select {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+.input-con6 {
+  display: flex;
+  min-width: 32vw;
+  max-height: 5vh;
+  padding: 2%;
+  margin-left: 2vw;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 1px;
+  background-color: #e4e6eb;
+  text-align: start;
+  align-items: center;
+}
+.input-con6 img {
+  margin-right: 2px;
+  width: 1.1vw; /* Ajustez la largeur selon vos besoins */
+  height: 2.8vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+.custom-select-wrapper1 select {
+  width: 100%;
+  min-width: 30vw;
+  padding: 5px;
+  border-radius: 5px;
+  appearance: none; /* Pour les autres navigateurs */
+  background: transparent;
+  border: none;
+  color: #080808;
+  cursor: auto;
+}
+/* Styles pour les options de la liste déroulante */
+.custom-select-wrapper1 select option {
+  color: #000;
+  padding: 5px;
+  background-color: #e4e6eb;
+}
+
+.custom-select-wrapper1 select option[disabled] {
+  color: black;
+} 
+
+.input-con6 select:focus {
+  outline: none; /* Supprime la bordure d'accentuation par défaut (utile pour l'accessibilité) */
+}
+
+/*............................EDIT......................................................................*/
+/*...............objets ...................................................................................*/
+
+.input-Edit {
+  display: flex;
+  min-width: 21vw;
+  max-height: 5vh;
+  padding: 2%;
+  margin-left: 3vw;
+  margin-bottom: 5px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 1px;
+  background-color: #e4e6eb;
+  text-align: start;
+  align-items: center;
+}
+.input-Edit select:focus {
+  outline: none; /* Supprime la bordure d'accentuation par défaut (utile pour l'accessibilité) */
+}
+
+.input-Edit img {
+  margin-right: 2px;
+  width: 0.9vw; /* Ajustez la largeur selon vos besoins */
+  height: 2.1vh; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Styles pour la liste déroulante d'objets */
+.custom-select-wrapper-Edit select {
+  width: 100%;
+  min-width: 18vw;
+  padding: 5px;
+  border-radius: 5px;
+  appearance: none; /* Pour les autres navigateurs */
+  background: transparent;
+  border: none;
+  color: #080808;
+  cursor: auto;
+}
+/* Styles pour les options de la liste déroulante */
+.custom-select-wrapper-Edit select option {
+  color: #000;
+  padding: 5px;
+  background-color: #e4e6eb;
+}
+
+
+.input-row-edit {
+  gap: 2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin-left: -2vw;
+}
+.input-label-edit {
+  text-align: start;
+  justify-content: space-between;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  min-height: 1vh;
+  min-width: 11vw;
+  margin-left: 5vw;
+}
+.button-wrap11 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 2vw;
+  gap: 1px;
+  padding: 0px;
+}
+.button-minu,
+.button-plu {
+  background-color: rgb(255, 212, 0);
+  color: rgb(1, 1, 1);
+  border: none;
+  border-radius: 50%;
+  width: 2vw;
+  height: 4vh;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.button-coun {
+  margin: 0 10px;
+  font-size: 13px;
+}
+.confirmButton {
+  margin-left: 1vw;
+  min-width: 6vw;
+  min-height: 5vh;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 11px;
+  border: rgb(255, 212, 0);
+  background-color: rgb(255, 212, 0);
+  box-shadow: #090909 2px 2px;
+  cursor: pointer;
+}
+.cancelButton {
+  margin-left: 10vw; /* Ajoutez un espace à droite du bouton Annuler */
+  min-width: 6vw;
+  min-height: 5vh;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 11px;
+  border: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  box-shadow: #090909 2px 2px 2px 0.5px;
+  cursor: pointer;
+}
+
+/*.depart.............................................................................................*/
+.input-conAdd {
+  display: flex;
+  width: 20vw;
+  height: 5vh;
+  padding: 2%;
+  margin-left: 3vw;
+  margin-bottom: 30px;
+  margin-top: 3vh;
+  border: none;
+  border-radius: 15px;
+  background-color: #e4e6eb;
+  text-align: start;
+  align-items: center;
+}
+.input-conAdd input {
+  width: 15vw;
+  height: 4vh;
+  margin-left: 1vw;
+  margin-top: 1.5vh;
+  background-color: transparent;
+}
+.input-conAdd img {
+  margin-left: 0.5vw;
+  margin-top: 0;
+  width: 0.8vw; /* Ajustez la largeur selon vos besoins */
+  height: 2vh; /* Ajustez la hauteur selon vos besoins */
+}
+/*.............................................................*/
+.input-container-flex-Edit {
+  display: flex;
+  align-items: center;
+}
+.input-container-Edit {
+  height: 6vh;
+  width: vw;
+  margin-bottom: 3px;
+  background-color: rgb(247, 245, 245);
+  border-radius: 15px;
+  border: transparent;
+  margin-left: -50px;
+}
+.input-label-date {
+  max-height: 8vh;
+  max-width: 10vw;
+  position: relative;
+  display: inline;
+  margin-left: -10vw;
+}
+.input-con1-Edit {
+  color: transparent; /* Masque le texte de l'input */
+  width: 3vw;
+  height: 20px;
+  background-color: transparent;
+  border: transparent;
+  margin-top: 3vh;
+  margin-left: 30px;
+}
+
+.input-con1-Edit select {
+  color: black; /* Masque le texte de l'input */
+  text-shadow: 0 0 0 rgb(248, 247, 247);
+  width: 8vw;
+  height: 2.5pc;
+  background-color: #e7e4e4;
+  border: transparent;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+}
+.input-con2-Edit {
+  display: inline-flex; /* Utilisez inline-flex pour aligner les éléments sur la même ligne */
+  align-items: center; /* Centrez verticalement les éléments */
+  width: 14vw;
+  height: 6vh;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 1vw;
+  margin-top: 3vh;
+}
+
+.input-con2-Edit label {
+  /* Supprimez les styles inutiles, car ils masquent le texte et ne sont pas nécessaires */
+  color: black;
+  width: 8vw;
+  height: 2.5pc;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 15px;
+}
+
+.input-con2-Edit select {
+  /* Supprimez les styles inutiles, car ils masquent le texte et ne sont pas nécessaires */
+  color: black;
+  width: 70%; /* Remplissez tout l'espace disponible horizontalement */
+  background-color: transparent;
+  border: transparent;
+}
+.input-bu-Edit {
+  width: 25vw;
+  height: 1vh;
+  padding: 10px;
+  border-radius: 1em;
+  color: rgb(26, 2, 2);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  margin-left: -70px;
+}
+.input-bu-Edit p {
+  margin-left: 10vw;
+  padding: 1.5vw;
+}
+.switch-Edit {
+  margin-left: 8vw;
+  position: absolute;
+  display: flex;
+  width: 3vw;
+  height: 2vh;
+}
+.switch-Edit input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderEdit {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sliderEdit:before {
+  position: absolute;
+  content: '';
+  height: 2.6vh;
+  width: 1.1vw;
+  left: 0px;
+  bottom: -1px;
+  box-shadow: #ccc -1px 0px 1px 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .sliderEdit {
+  background-color: #f5f506;
+}
+
+input:focus + .sliderEdit {
+  box-shadow: 0 0 1px #f5f506;
+}
+
+input:checked + .sliderEdit:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(1.8vw);
+  box-shadow: #f5f506 1px 0px 1px 1px;
+}
+/* Rounded sliders */
+.sliderEdit.round {
+  border-radius: 34px;
+}
+
+.sliderEdit.round:before {
+  border-radius: 50%;
+}
+
+.button-containerEdit {
+  display: flex;
+  align-items: center;
+  margin-top: 3vh;
+  font-weight: bold;
+  margin-left: 2.5vw;
+  width: 22vw;
+  height: 10vh;
+}
+.button-wrapperEdit {
+  display: inline-flex; /* Afficher les boutons sur la même ligne */
+  margin-left: 2vw;
+  min-width: 12vw;
+  width: 20vw;
+  height: 2vh;
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  align-items: center;
+}
+.button-primaryEdit {
+  height: 5vh;
+  width: 15vw;
+  color: rgb(4, 4, 4);
+  padding: 10px 10px;
+  margin-right: 0px; /* Espacement entre les boutons */
+  border-radius: 30px 0px 0 30px; /* Arrondi pour la partie supérieure */
+  border: none; /* Supprime la bordure */
+  cursor: pointer; /* Curseur au survol */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.button-secondaryEdit {
+  height: 5vh;
+  width: 15vw;
+  color: #090909;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: '#F5F5F5';
+  cursor: pointer;
+  font-size: 12px;
+}
+.button-secondaryEdit button:hover {
+  background-color: rgb(255, 212, 0);
+}
+
+.input-rowE {
+  gap: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  margin-left: -1vw;
+}
+.button-wrapEdit {
+  margin-left: 5vw;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.button-minusEdit,
+.button-plusEdit {
+  background-color: rgb(255, 212, 0);
+  color: rgb(1, 1, 1);
+  border: none;
+  border-radius: 50%;
+  width: 2vw;
+  height: 4vh;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  z-index: 1;
+}
+.button-countEdit {
+  margin: 0 10px;
+  font-size: 13px;
+}
+.input-bu2-Edit {
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  margin: 0 auto;
+  padding: 1px;
+  border-radius: 1em;
+  color: rgb(26, 2, 2);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left: -8vh;
+}
+.input-bu2-Edit p {
+  margin-left: 11vw;
+  padding: 0.6vw;
+}
+h5 {
+  display: flex;
+  font-size: 0.9em;
+}
+
+/*...Payement................................................................................*/
+.all{
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding: 10px 20px 20px;
+}
+.conf{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 15px;
+  
+}
+.pay {
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  position: relative;
+  padding-left: 35px;
+}
+.inp{
+  position: absolute;
+  cursor: pointer;
+  left: -13px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+
+}
+
+.inp:checked + ::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid rgb(255, 212, 0);
+  box-sizing: border-box;
+}
+.inp:checked + ::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(255, 212, 0);
+}
+.payer {
+  display: flex;
+  gap: 15px;
+  height: 3vh;
+}
+
+.payer h4 {
+  display: block;
+  font-weight: bold;
+  width: 18vw;
+  margin-left: -2vw;
+}
+.payer img {
+  display: block;
+  font-weight: bold;
+  margin-left: -3vw;
+}
+.fac{
+  color: gray;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: -15.5vw;
+}
+.fac1{
+  color: gray;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: -19.5vw; 
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour l'arrière-plan obscurci */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Assurez-vous que la modal est au-dessus de tout le reste */
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+}
+/* Style pour le bouton OK dans la modal */
+.modal-content button {
+  background-color: rgb(255, 212, 0); /* Couleur du bouton */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Style pour le bouton OK au survol */
+.modal-content button:hover {
+  background-color: rgb(255, 212, 0); /* Couleur du bouton au survol */
+}
+
+/* Style pour les champs de formulaire */
+.modal-content1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+  height: 35vh;
+}
+
+.modal-content1 form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content1 label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-content1 input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.modal-content1 button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal-content1 button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
